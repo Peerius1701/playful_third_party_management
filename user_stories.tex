@@ -1,0 +1,387 @@
+\documentclass[12pt]{article}%
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[export]{adjustbox}
+\usepackage{pdfpages}
+\usepackage[markup=nocolor]{changes}
+%-------------------------------------------
+
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\setlength{\textwidth}{7.0in}
+\setlength{\oddsidemargin}{-0.35in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\textheight}{9.0in}
+\setlength{\parindent}{0.0in}
+\pagestyle{empty}
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+%\begin{flushright}
+%\textbf{Gruppe xxx \\
+%Name \\
+%Name \\
+%Name}
+%\end{flushright}
+
+\begin{center}
+\textbf{\Large BP Gruppe 6 User Stories} \\
+\end{center}
+
+%--------------- User Story 1 ---------------%
+\section*{\large \underline{User Story 1}}
+
+\textit{\textbf{Name:}} Datenbankstruktur als ERM
+\\
+
+\textbf{\textit{Beschreibung:}} Als Entwickler/-in möchte ich einen Überblick über die zu verwendenden Daten seitens des AG haben. Dazu benötige ich eine Übersicht/Visualisierung, aus der ich nachhaltig und effizient benötigte Informationen zur Implementierung entnehmen kann.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es liegt ein ER Modell und eine Permissionstabelle vor; Das ER Modell erfasst alle geplanten Entitäten und Beziehungen zwischen diesen. Die Permissionstabelle enthält die Rollen Leitung, Management und Mitarbeiter/-in, sowie alle Funktionalitäten. \\
+
+
+\\
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+
+
+%--------------- User Story 3 ---------------% 
+\section*{\large \underline{User Story 3}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} User-Interface
+\\
+
+\textbf{\textit{Beschreibung:}} Als User möchte ich eine Oberfläche haben, in der mir stets die Menüleiste zum Navigieren zu Formularen und Reports angezeigt wird. 
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Auf der Startseite wird die Menüleiste angezeigt, wo es möglich ist die einzelnen Formularen und Reports auszuwählen und anzuklicken. Beim Klicken auf ein Menüpunkt wird der User auf eine Platzhalter-Seite weitergeleitet. Auf jeder dieser Platzhalter-Seiten soll die Menüleiste weiterhin angezeigt werden und anklickbar sein.
+
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 13
+\\
+
+
+%--------------- User Story 2 ---------------% 
+\section*{\large \underline{User Story 2}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Login
+\\
+
+\textbf{\textit{Beschreibung:}} Als User möchte ich mich im System mit meinem Kürzel und Passwort authentifizieren können, um auf das System zugreifen zu können.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es gibt ein Loginformular und nach erfolgreichem Einloggen wird der Nutzername auf der Seite angezeigt. Ungültige Eingaben werden ignoriert.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 8
+\\
+
+
+%--------------- User Story 4 ---------------% 
+\section*{\large \underline{User Story 4}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Rollenbasierte Zugriffskontrolle
+\\
+
+\textbf{\textit{Beschreibung:}} Als User möchte ich auf die Formulare / Reports zugreifen können, die für meine Rolle bestimmt sind.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es werden nur die Formulare / Reports angezeigt, auf die der User laut der Permissionstabelle zugreifen darf. Dies funktioniert für alle 3 Rollen. Die Navigationsschaltflächen zu allen Seite, für die man nicht die entsprechenden Rechte hat sind ausgeblendet.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 8
+\\
+
+
+%--------------- User Story 5 ---------------% 
+\section*{\large \underline{User Story 5}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Mitarbeiter/-innen anlegen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich einen neuen Mitarbeiter/-innen anlegen.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen über den Mitarbeiter/-innen eingetragen werden können. Nach dem Speichern wird der neue Mitarbeiter/-innen in der Liste der Mitarbeiter/-innen der Leitung angezeigt.
+\\
+
+%Es werden nur die Formulare / Reports angezeigt, auf die die User laut der Permissionstabelle zugreifen dürfen.
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+%--------------- User Story 6 ---------------% 
+\section*{\large \underline{User Story 6}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Management-User anlegen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich einen neuen Management-User anlegen.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen über den User eingetragen werden können. Nach dem Speichern wird der neue Management-User in der Liste der Management-User der Leitung angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 3
+\\
+
+
+%--------------- User Story 7 ---------------% 
+\section*{\large \underline{\deleted{User Story 7}}}
+% --- SOLL NICHT IMPLEMENTIERT WERDEN --- %
+\textit{\textbf{Name:}} Leitungs-User anlegen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich einen neuen Leitungs-User anlegen.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen über den User eingetragen werden können. Nach dem Speichern wird der neue Leitungs-User in der Liste der Leitungs-User der Leitung angezeigt.
+
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+%--------------- User Story 8.0 ---------------% 
+\section*{\large \underline{User Story 8.0}}
+\textit{\textbf{Name:}} Publikation anlegen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Mitarbeiter/-in  oder Leitung möchte ich eine neue Publikation anlegen.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Auf der Seite der Liste der Publikationen existiert ein Button „Hinzufügen“. Beim Drücken dieses Buttons wird man auf eine neue Seite weitergeleitet (oder es öffnet sich in einem Fenster ein Formular), auf der das Formular zum Publikation anlegen ist. Das Formular enthält alle Felder, die Attribute einer Publikation im ER Diagramm sind. Nach dem Speichern wird es in der Liste der Publikationen angezeigt. Jeder User, der versucht eine Publikation anzulegen, laut der Permissionstabelle jedoch nicht die Berechtigung dazu hat, bekommt eine Fehlermeldung angezeigt und die Liste der Publikationen bleibt unverändert.
+
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+%--------------- User Story 8.1 ---------------% 
+\section*{\large \underline{User Story 8.1}}
+\textit{\textbf{Name:}} Publikation editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Mitarbeiter/-in  oder Leitung möchte ich eine vorhandene Publikation editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Jeder User bekommt in der Liste der Publikationen bei den Publikationen, die er laut der Permissionstabelle bearbeiten darf, ein Icon angezeigt. Beim Klicken auf diesen wird der User auf eine neue Seite weitergeleitet, auf der das entsprechende Formular anzeigt wird. Jedes Feld des Formulars enthält die bisher gespeicherten Informationen über das Formular und jedes Feld von diesem ist editierbar. Es existiert ein Button "Speichern". Beim Drücken dieses Buttons wird das Formular gespeichert. Der User wird anschließend wieder auf die Seite mit der Liste der Publikationen weitergeleitet.
+
+%Es werden nur die Formulare / Reports angezeigt, auf die die User laut der Permissionstabelle zugreifen dürfen.
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 3
+\\
+
+
+%--------------- User Story 8.2 ---------------% 
+\section*{\large \underline{User Story 8.2}}
+\textit{\textbf{Name:}} Publikation anzeigen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Mitarbeiter/-in  oder Leitung möchte ich die Details einer vorhandenen Publikation anzeigen lassen.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Auf der Seite der Liste der Publikationen wird man beim Klicken auf den Namen einer Publikation, auf eine neue Seite weitergeleitet, wenn der User laut der Permissionstabelle die entsprechende Berechtigung dazu hat. Für jeden User, der die entsprechende Berechtigung nicht hat, hat das Klicken auf den Namen der Publikation keinen Effekt. Auf dieser Seite wird dem User die Publikation mit all ihren Details angezeigt. Es ist nicht möglich, jegliche Felder der Publikation zu bearbeiten. Sollte es einem User möglich sein, unautorisiert eine Publikation anklicken zu können, so wird das Einsehen der Publikation serverseitig blockiert. \\
+
+%Es werden nur die Formulare / Reports angezeigt, auf die die User laut der Permissionstabelle zugreifen dürfen.
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 3
+\\
+
+%--------------- User Story 9 ---------------% 
+\section*{\large \underline{User Story 9}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Abschlussarbeiten anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neue Abschlussarbeiten anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen über die Abschlussarbeit eingetragen werden können. Nach dem Speichern wird es in der Liste der Abschlussarbeiten angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+(nachfragen von wem editierbar/anlegbar)
+%--------------- User Story 10 ---------------% 
+\section*{\large \underline{User Story 10}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Wissenschaftlicher Nachwuchs anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als User möchte ich eine neue Wissenschaftlicher Nachwuchs anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der HiWis angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 3
+\\
+
+
+(nachfragen von wem editierbar/anlegbar)
+%--------------- User Story 11 ---------------% 
+\section*{\large \underline{User Story 11}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Lehrleistung anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als User möchte ich eine neue Lehrleistung anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Lehrleistungen angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+(nachfragen von wem editierbar/anlegbar)
+%--------------- User Story 12 ---------------% 
+\section*{\large \underline{User Story 12}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Studentische Hilfskräfte anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neue Lehrleistung anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Studentische Hilfskräfte angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+(nachfragen von wem editierbar/anlegbar)
+%--------------- User Story 13 ---------------% 
+\section*{\large \underline{User Story 13}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Invest anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neues Invest-Formular anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Investments angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+
+%--------------- User Story 13 ---------------% 
+\section*{\large \underline{User Story 13}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Reisen anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neues Reise-Formular anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Reisen angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 5
+\\
+
+
+%--------------- User Story 14 ---------------% 
+\section*{\large \underline{User Story 14}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Projekt anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neues Projekt-Formular anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Projekte angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 13
+\\
+
+
+%--------------- User Story 15 ---------------% 
+\section*{\large \underline{User Story 15}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Pando anlegen/editieren
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich eine neues Pando-Formular anlegen und editieren.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Formular angezeigt, in das die nötigen Informationen eingetragen werden können. Nach dem Speichern wird es in der Liste der Pando-Formulare angezeigt.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} 3
+\\
+
+
+%--------------- REPORTS ---------------% 
+(nachfragen was ein report genau ist (Excel-Liste / Tabelle))
+%--------------- User Story 16 ---------------% 
+\section*{\large \underline{User Story 16}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} Konten einsehen
+\\
+
+\textbf{\textit{Beschreibung:}} Als Leitung möchte ich Konten einsehen können.
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} Es wird ein Report (?) angezeigt, in dem die Informationen über Konten eingetragen sind.
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}} TBD
+\\
+
+
+
+
+
+%--------------- User Stories ---------------% 
+\comment{ 
+Reports/Views
+- Projektübersicht
+- Einzelprojekt
+- Pando
+- Pando Mitarbeiter
+- Übersicht - Budget
+
+Gamification
+- Leaderboard
+- Leaderboard-Parameter anpassen
+- Virtuelles Lob
+- Collectible
+
+Weiteres
+- Angriffsschutz
+
+
+}
+
+
+
+%--------------- Vorlage ---------------% 
+%--------------- User Story X ---------------% 
+\section*{\large \underline{User Story X}}
+% GESCHRIEBEN VON: 
+\textit{\textbf{Name:}} 
+\\
+
+\textbf{\textit{Beschreibung:}} 
+\\
+
+\textbf{\textit{Akzeptanzkriterium:}} 
+\\
+
+\textbf{\textit{Geschätzter Aufwand (Story Points):}}
+\\
+
+
+
+
+\end{document}
